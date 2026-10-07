@@ -1,7 +1,28 @@
-I compiled this project as a comprehensive collection of functional scripts designed to solve common logical and mathematical problems. Rather than focusing on a single application, this repository serves as a library of algorithms and utility functions. I wanted to practice how to structure a large "multi tool" script where a single entry point allows the user to navigate through various specialized sections, ranging from academic grading systems to complex time and temperature converters.
+# Python Academic Logic & Algorithm Collection
 
-The project is divided into multiple sections, each tackling a specific programming challenge. Some modules focus on arithmetic logic, such as the Fibonacci sequence generator and the parity checker (odd/even), while others deal with data management, like the age sorting algorithm and the student attendance calculator. I also included more practical utilities, such as a workplace wage calculator that uses nested conditions based on age and gender, and a network speed estimator that converts file sizes between megabytes and gigabits to calculate download or upload durations.
+A structured collection of Python scripts demonstrating fundamental programming logic, mathematical algorithms, unit converters, and condition-based decision structures.
 
-A major focus of this script was implementing robust error handling. Since almost every section relies on user input, I used try except blocks to prevent the program from crashing if a user enters a string instead of a number. I also experimented with custom error triggers to validate data ranges for example, ensuring that a temperature or test score falls within a realistic numerical bound. This project helped me understand the importance of defensive programming and how to guide a user through a terminal based interface using clear prompts and screen clearing functions to keep the output tidy.
+---
 
-One of the most interesting parts to code was the time converter in Section 8 and 9. Instead of using a built in library, I wrote a while loop logic to manually subtract seconds into hours and minutes, which gave me a much better grasp of how modular arithmetic works. I also enjoyed building the "Loker Berwarna" (colored locker) logic, which uses the modulo operator to assign a color based on a numerical sequence. This collection has been a great way to refine my syntax and build a solid foundation for more complex software engineering projects in the future.
+## Repository Structure
+
+```text
+Python-Academic-Collection/
+├── 01_fundamentals/
+│   ├── 01_list_indexing.py             # Basic list index operations
+│   ├── 02_even_odd_checker.py          # Modulo parity checker
+│   └── 03_locker_color_assigner.py     # Modulo arithmetic pattern matching
+├── 02_converters_and_calculators/
+│   ├── 01_temperature_converter.py     # Temperature conversion (C, F, K)
+│   ├── 02_time_converter.py            # Seconds to HH:MM:SS conversion
+│   ├── 03_network_speed_estimator.py   # Download/Upload time estimator
+│   └── 04_attendance_checker.py        # Percentage calculator & eligibility logic
+├── 03_business_and_academic_logic/
+│   ├── 01_grade_evaluator.py           # Academic grading matrix
+│   ├── 02_age_sorter.py                # Sorting algorithms & minimum finding
+│   ├── 03_wage_calculator.py           # Multi-conditional wage evaluation
+│   └── 04_score_progress_tracker.py    # Progress & delta improvement tracking
+└── 04_algorithms_and_math/
+    ├── 01_number_sequence_generator.py # Iterative sequence logic
+    ├── 02_sum_range_formatter.py       # Range summation & string formatting
+    └── 03_fibonacci_calculator.py      # Iterative Fibonacci computation
